@@ -1,157 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Your Name</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
+<meta charset="UTF-8">
+<title>Xiaoya Wang</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 2rem 1rem 3rem;
-      line-height: 1.6;
-      background: #fafafa;
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: #f8f9fa;
+        color: #222;
+        line-height: 1.6;
     }
+
+    /* Layout */
     .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background: #ffffff;
-      padding: 2rem 2.5rem;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-      border-radius: 12px;
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
     }
-    header {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      margin-bottom: 1.5rem;
+
+    /* Sidebar */
+    .sidebar {
+        width: 280px;
+        background: #fff;
+        padding: 2rem 1.5rem;
+        border-right: 1px solid #eee;
+        height: 100vh;
+        box-sizing: border-box;
+        position: sticky;
+        top: 0;
     }
-    .avatar {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid #eee;
+
+    .sidebar img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 1rem;
+        border: 2px solid #ddd;
     }
-    h1 {
-      margin: 0 0 0.25rem;
-      font-size: 2rem;
+
+    .name {
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 0.3rem;
     }
+
     .subtitle {
-      margin: 0.1rem 0;
-      color: #555;
+        text-align: center;
+        color: #666;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
     }
-    a {
-      color: #0366d6;
-      text-decoration: none;
+
+    .contact {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+        color: #666;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .nav a {
+        display: block;
+        padding: 0.4rem 0;
+        color: #0366d6;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: 0.2s;
     }
-    .links a {
-      margin-right: 0.75rem;
+
+    .nav a:hover {
+        color: #024fa4;
+        text-decoration: underline;
     }
+
+    /* Main content */
+    .content {
+        padding: 2.5rem 3rem;
+        flex: 1;
+    }
+
     h2 {
-      margin-top: 2rem;
-      margin-bottom: 0.75rem;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 0.25rem;
-      font-size: 1.3rem;
+        margin-top: 2rem;
+        margin-bottom: 0.6rem;
+        font-size: 1.4rem;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 0.3rem;
     }
+
     ul {
-      padding-left: 1.3rem;
+        padding-left: 1.3rem;
     }
+
     li {
-      margin-bottom: 0.35rem;
+        margin-bottom: 0.6rem;
     }
-    @media (max-width: 600px) {
-      .container {
-        padding: 1.5rem 1.25rem;
-      }
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .avatar {
-        width: 100px;
-        height: 100px;
-      }
+
+    a {
+        color: #0366d6;
+        text-decoration: none;
     }
-  </style>
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* Mobile layout */
+    @media (max-width: 800px) {
+        .container {
+            flex-direction: column;
+        }
+        .sidebar {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            border-right: none;
+            border-bottom: 1px solid #eee;
+        }
+        .nav a {
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+    }
+</style>
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <!-- Replace the src with your own photo URL if you have one -->
-      <img class="avatar" src="https://via.placeholder.com/200" alt="Your photo" />
-      <div>
-        <h1>Your Name</h1>
-        <p class="subtitle">she/her • M.A. in Applied Linguistics, Teachers College, Columbia University</p>
-        <p class="subtitle">youremail (at) example (dot) com</p>
-        <p class="links">
-          <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-          <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-          <!-- Add more links as needed -->
-        </p>
-      </div>
-    </header>
+<div class="container">
 
-    <section>
-      <h2>About</h2>
-      <p>
-        Hello! I am a graduate student in Applied Linguistics at Teachers College, Columbia University.
-        My interests include language assessment, AI-mediated feedback, automated essay scoring (AES),
-        and corpus-informed pedagogy. I combine experimental and corpus-based methods to study how
-        language is learned, taught, and assessed in technology-rich environments.
-      </p>
-    </section>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <img src="https://via.placeholder.com/200" alt="Profile Photo">
 
-    <section>
-      <h2>Current Projects</h2>
-      <ul>
-        <li>Systematic review on the constructs of second language writing in automated essay scoring.</li>
-        <li>Project on teacher roles in automated writing evaluation for L2 writing accuracy and revision.</li>
-        <li>Corpus-based study of AI-mediated feedback in academic writing classes.</li>
-      </ul>
-    </section>
+        <div class="name">Xiaoya Wang</div>
+        <div class="subtitle">M.A. Applied Linguistics<br>Teachers College, Columbia University</div>
 
-    <section>
-      <h2>Publications & Presentations</h2>
-      <h3>Papers & Manuscripts</h3>
-      <ul>
-        <li>YourLastName, Y. (2025). Title of your paper. <em>Journal Name</em>, 00(0), 1–20.</li>
-        <li>YourLastName, Y., Coauthor, A. (2024). Another paper title. <em>Conference Proceedings</em>.</li>
-      </ul>
+        <div class="contact">
+            xw2998 (at) tc.columbia.edu  
+        </div>
 
-      <h3>Conference Presentations</h3>
-      <ul>
-        <li>YourLastName, Y. (2025, March). Talk title. Talk presented at Conference Name, City, Country.</li>
-        <li>YourLastName, Y. (2024, October). Poster title. Poster presented at Conference Name, City, Country.</li>
-      </ul>
-    </section>
+        <div class="nav">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#cv">CV</a>
+        </div>
+    </div>
 
-    <section>
-      <h2>Teaching</h2>
-      <h3>As Instructor / Teaching Resident</h3>
-      <ul>
-        <li>Intermediate ESL (Community Language Program, Teachers College, Columbia University, Fall 2025)</li>
-      </ul>
+    <!-- MAIN CONTENT -->
+    <div class="content">
 
-      <h3>As Teaching Assistant</h3>
-      <ul>
-        <li>Course name (Semester, Institution, Instructor)</li>
-      </ul>
-    </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                I am a graduate student in Applied Linguistics at Teachers College, Columbia University. 
+                My research focuses on language assessment, automated writing evaluation (AWE), 
+                AI-mediated feedback, and corpus-informed pedagogy. I work with both experimental 
+                and corpus-based approaches to understand how technology can enhance L2 writing instruction, 
+                assessment validity, and learner development.
+            </p>
+        </section>
 
-    <section>
-      <h2>Other</h2>
-      <ul>
-        <li><a href="cv.pdf">Curriculum Vitae (PDF)</a></li>
-        <li>Languages: English, [others]</li>
-        <li>Interests: research, teaching, AI & education, [etc.]</li>
-      </ul>
-    </section>
-  </div>
+        <section id="research">
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Automated Essay Scoring (AES) & construct validity</li>
+                <li>AI-mediated feedback for L2 writing</li>
+                <li>Corpus linguistics in language assessment</li>
+                <li>Teacher roles in technology-enhanced writing instruction</li>
+            </ul>
+
+            <h2>Current Projects</h2>
+            <ul>
+                <li><strong>Systematic review:</strong> Constructs of second language writing in automated essay scoring.</li>
+                <li><strong>AWE project:</strong> Teachers’ mediation in AI-based revision processes.</li>
+                <li><strong>Corpus study:</strong> Linguistic features in AI-generated vs. human-generated L2 writing feedback.</li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Publications & Presentations</h2>
+            <ul>
+                <li>Wang, X. (2025). Title of your manuscript. <em>Journal Name</em>.</li>
+                <li>Wang, X., & Coauthor, Y. (2024). Conference presentation title. <em>Conference Name</em>.</li>
+            </ul>
+        </section>
+
+        <section id="teaching">
+            <h2>Teaching</h2>
+            <ul>
+                <li>Instructor, Intermediate ESL  
+                    <em>Community Language Program, Teachers College (Fall 2025)</em>
+                </li>
+                <li>Additional teaching experience can be listed here.</li>
+            </ul>
+        </section>
+
+        <section id="cv">
+            <h2>CV</h2>
+            <p>
+                <a href="cv.pdf" target="_blank">Download my CV (PDF)</a>
+            </p>
+        </section>
+
+    </div>
+</div>
+
 </body>
 </html>
