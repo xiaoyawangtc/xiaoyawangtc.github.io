@@ -4,47 +4,48 @@
 <meta charset="UTF-8">
 <title>Xiaoya Wang</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ======= STYLE (Baichen Du–style aesthetic) ======= -->
 <style>
     body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        background: #f8f9fa;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
+        background: #f7f7f7;
         color: #222;
-        line-height: 1.6;
+        line-height: 1.65;
     }
 
-    /* Layout */
     .container {
         display: flex;
-        max-width: 1200px;
+        max-width: 1300px;
         margin: 0 auto;
         padding: 0;
     }
 
-    /* Sidebar */
+    /* --- Sidebar --- */
     .sidebar {
-        width: 280px;
-        background: #fff;
-        padding: 2rem 1.5rem;
-        border-right: 1px solid #eee;
+        width: 300px;
+        background: #ffffff;
+        padding: 2.5rem 2rem;
+        border-right: 1px solid #e6e6e6;
         height: 100vh;
-        box-sizing: border-box;
         position: sticky;
         top: 0;
+        box-sizing: border-box;
     }
 
     .sidebar img {
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         object-fit: cover;
         display: block;
-        margin: 0 auto 1rem;
+        margin: 0 auto 1.2rem;
         border: 2px solid #ddd;
     }
 
     .name {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 600;
         text-align: center;
         margin-bottom: 0.3rem;
@@ -52,44 +53,47 @@
 
     .subtitle {
         text-align: center;
-        color: #666;
         font-size: 0.95rem;
-        margin-bottom: 1rem;
+        color: #666;
+        margin-bottom: 1.2rem;
     }
 
     .contact {
         text-align: center;
-        margin-bottom: 1.5rem;
         font-size: 0.9rem;
+        margin-bottom: 1.3rem;
         color: #666;
     }
 
     .nav a {
         display: block;
-        padding: 0.4rem 0;
+        padding: 0.45rem 0;
+        font-size: 1.05rem;
         color: #0366d6;
         text-decoration: none;
-        font-size: 1rem;
-        transition: 0.2s;
+        font-weight: 500;
+        transition: 0.2s ease;
     }
 
     .nav a:hover {
         color: #024fa4;
-        text-decoration: underline;
+        margin-left: 2px;
     }
 
-    /* Main content */
+    /* --- Main Content --- */
     .content {
-        padding: 2.5rem 3rem;
         flex: 1;
+        padding: 2.8rem 4rem;
+        background: #ffffff;
     }
 
     h2 {
-        margin-top: 2rem;
-        margin-bottom: 0.6rem;
-        font-size: 1.4rem;
-        border-bottom: 2px solid #eee;
-        padding-bottom: 0.3rem;
+        font-size: 1.5rem;
+        margin-top: 2.2rem;
+        margin-bottom: 0.7rem;
+        font-weight: 600;
+        border-bottom: 2px solid #efefef;
+        padding-bottom: 0.35rem;
     }
 
     ul {
@@ -109,38 +113,43 @@
         text-decoration: underline;
     }
 
-    /* Mobile layout */
-    @media (max-width: 800px) {
+    /* --- Mobile Responsive --- */
+    @media (max-width: 850px) {
         .container {
             flex-direction: column;
         }
         .sidebar {
             width: 100%;
             height: auto;
-            text-align: center;
+            position: relative;
             border-right: none;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #e6e6e6;
+            text-align: center;
         }
         .nav a {
             display: inline-block;
-            margin: 0 0.5rem;
+            margin: 0 0.7rem;
+        }
+        .content {
+            padding: 2rem 1.5rem;
         }
     }
 </style>
 </head>
 
+<!-- ======= BODY ======= -->
 <body>
 <div class="container">
 
-    <!-- SIDEBAR -->
+    <!-- ======= SIDEBAR ======= -->
     <div class="sidebar">
-        <img src="https://via.placeholder.com/200" alt="Profile Photo">
+        <img src="https://via.placeholder.com/300" alt="Profile Photo">
 
         <div class="name">Xiaoya Wang</div>
         <div class="subtitle">M.A. Applied Linguistics<br>Teachers College, Columbia University</div>
 
         <div class="contact">
-            xw2998 (at) tc.columbia.edu  
+            xw2998 (at) tc.columbia.edu
         </div>
 
         <div class="nav">
@@ -152,64 +161,75 @@
         </div>
     </div>
 
-    <!-- MAIN CONTENT -->
+    <!-- ======= MAIN CONTENT ======= -->
     <div class="content">
 
+        <!-- ======= ABOUT ======= -->
         <section id="about">
             <h2>About</h2>
             <p>
-                I am a graduate student in Applied Linguistics at Teachers College, Columbia University. 
-                My research focuses on language assessment, automated writing evaluation (AWE), 
-                AI-mediated feedback, and corpus-informed pedagogy. I work with both experimental 
-                and corpus-based approaches to understand how technology can enhance L2 writing instruction, 
-                assessment validity, and learner development.
+                Xiaoya Wang is a second-year MA student in Applied Linguistics at Teachers College, 
+                Columbia University. She holds a bachelor's degree in Business English. Her research 
+                interests focus on language assessment, computational linguistics, and corpus linguistics.
+            </p>
+
+            <p>
+                Before joining Teachers College, Xiaoya was a visiting student at UC Berkeley for a year, 
+                specializing in Phonetics and Phonology. During her time there, she worked as a research 
+                assistant on projects related to Natural Language Processing (NLP) and Large Language Models (LLMs) 
+                in the Undergraduate Research Apprentice Program (URAP) under the supervision of 
+                Dr. Zehlia Babaci-Wilhite.
             </p>
         </section>
 
+        <!-- ======= RESEARCH ======= -->
         <section id="research">
             <h2>Research Interests</h2>
             <ul>
-                <li>Automated Essay Scoring (AES) & construct validity</li>
-                <li>AI-mediated feedback for L2 writing</li>
-                <li>Corpus linguistics in language assessment</li>
-                <li>Teacher roles in technology-enhanced writing instruction</li>
+                <li>Language assessment & automated essay scoring</li>
+                <li>Computational linguistics for L2 writing</li>
+                <li>Corpus linguistics in language education</li>
+                <li>AI-mediated feedback in writing instruction</li>
             </ul>
 
             <h2>Current Projects</h2>
             <ul>
-                <li><strong>Systematic review:</strong> Constructs of second language writing in automated essay scoring.</li>
+                <li><strong>Systematic review:</strong> Constructs of second language writing in automated essay scoring (AES).</li>
                 <li><strong>AWE project:</strong> Teachers’ mediation in AI-based revision processes.</li>
-                <li><strong>Corpus study:</strong> Linguistic features in AI-generated vs. human-generated L2 writing feedback.</li>
+                <li><strong>Corpus study:</strong> Linguistic features of AI-generated vs. human-generated feedback.</li>
             </ul>
         </section>
 
+        <!-- ======= PUBLICATIONS ======= -->
         <section id="publications">
             <h2>Publications & Presentations</h2>
             <ul>
-                <li>Wang, X. (2025). Title of your manuscript. <em>Journal Name</em>.</li>
-                <li>Wang, X., & Coauthor, Y. (2024). Conference presentation title. <em>Conference Name</em>.</li>
+                <li>Wang, X. (2025). Title of manuscript. <em>Journal Name</em>.</li>
+                <li>Wang, X., Coauthor, Y. (2024). Conference presentation title. <em>Conference Name</em>.</li>
             </ul>
         </section>
 
+        <!-- ======= TEACHING ======= -->
         <section id="teaching">
             <h2>Teaching</h2>
             <ul>
-                <li>Instructor, Intermediate ESL  
-                    <em>Community Language Program, Teachers College (Fall 2025)</em>
+                <li>
+                    Instructor, Intermediate ESL  
+                    <em>(Community Language Program, Teachers College – Fall 2025)</em>
                 </li>
-                <li>Additional teaching experience can be listed here.</li>
+                <li>Additional teaching experience can be added here.</li>
             </ul>
         </section>
 
+        <!-- ======= CV ======= -->
         <section id="cv">
             <h2>CV</h2>
             <p>
-                <a href="cv.pdf" target="_blank">Download my CV (PDF)</a>
+                <a href="cv.pdf" target="_blank">Download CV (PDF)</a>
             </p>
         </section>
 
     </div>
 </div>
-
 </body>
 </html>
