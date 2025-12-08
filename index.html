@@ -8,6 +8,9 @@
 <!-- Google Font: Crimson Pro -->
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+<!-- Font Awesome for LinkedIn Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
     /* ===== GLOBAL ===== */
     body {
@@ -27,19 +30,19 @@
 
     /* ===== COMPACT SIDEBAR ===== */
     .sidebar {
-        width: 260px; /* compact width */
+        width: 260px;
         background: #A8D0E6; /* bright Columbia baby blue */
-        padding: 1.5rem 1.2rem; /* reduced padding */
+        padding: 1.5rem 1.2rem;
         height: 100vh;
         position: sticky;
         top: 0;
-        overflow-y: hidden; /* prevents scrolling */
+        overflow-y: hidden;
         color: #003366;
         box-sizing: border-box;
     }
 
     .sidebar img {
-        width: 120px;   /* compact image */
+        width: 120px;
         height: 120px;
         border-radius: 50%;
         object-fit: cover;
@@ -49,7 +52,7 @@
     }
 
     .name {
-        font-size: 1.6rem;  /* slightly smaller */
+        font-size: 1.6rem;
         font-weight: 600;
         text-align: center;
         margin-bottom: 0.3rem;
@@ -60,7 +63,23 @@
         text-align: center;
         font-size: 0.9rem;
         color: #2E4A62;
-        margin-bottom: 0.5rem; /* tighter spacing */
+        margin-bottom: 0.3rem;
+    }
+
+    /* ===== SOCIAL ICON ===== */
+    .social {
+        text-align: center;
+        margin: 0.4rem 0 0.6rem;
+    }
+
+    .social a {
+        color: #003366;
+        font-size: 1.4rem;
+        transition: 0.2s;
+    }
+
+    .social a:hover {
+        color: #001F33;
     }
 
     .contact {
@@ -71,12 +90,12 @@
     }
 
     .nav {
-        margin-top: 0.8rem; /* compact */
+        margin-top: 0.8rem;
     }
 
     .nav a {
         display: block;
-        padding: 0.3rem 0; /* more compact */
+        padding: 0.3rem 0;
         font-size: 0.95rem;
         color: #003366;
         text-decoration: none;
@@ -91,7 +110,7 @@
     /* ===== MAIN CONTENT ===== */
     .content {
         flex: 1;
-        padding: 2.7rem 3.5rem; /* slightly tighter */
+        padding: 2.7rem 3.5rem;
         background: white;
     }
 
@@ -157,6 +176,13 @@
 
         <div class="subtitle">she / her / hers</div>
 
+        <!-- LINKEDIN ICON INSERTED HERE -->
+        <div class="social">
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-URL" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+
         <div class="contact">
             xw2998 (at) tc.columbia.edu
         </div>
@@ -199,7 +225,7 @@
 
             <h2>Current Projects</h2>
             <ul>
-                <li>The Constructs of Second Language Writing in Automated Essay Scoring: A Systematic Review </li>
+                <li>The Constructs of Second Language Writing in Automated Essay Scoring: A Systematic Review</li>
                 <li>Emotional AI in Language Education: A Scoping Review</li>
                 <li>Linking Adverbials in English Academic Writing of Chinese EFL Learners and ChatGPT: A Corpus-Based Study</li>
             </ul>
@@ -210,7 +236,9 @@
             <h2>Presentations</h2>
             <ul>
                 <li>Voss, E., Eskin, D., Mo, K., Shetye, S., Wang, X., & Zhang, Y. (2025). 
-                    Emotional AI in Language Education: A Scoping Review. <em>The 3rd Annual Conference of Artificial Intelligence Research in Applied Linguistics</em>.</li>
+                    Emotional AI in Language Education: A Scoping Review. 
+                    <em>The 3rd Annual Conference of Artificial Intelligence Research in Applied Linguistics</em>.
+                </li>
             </ul>
         </section>
 
@@ -221,8 +249,8 @@
                 <li>
                     ESL Instructor, Intermediate 3 Course, Community Language Program (Fall 2025),
                     <a href="https://www.tc.columbia.edu/communitylanguage/" target="_blank">
-                    https://www.tc.columbia.edu/communitylanguage/
-            </a>
+                        https://www.tc.columbia.edu/communitylanguage/
+                    </a>
                 </li>
             </ul>
         </section>
@@ -237,3 +265,4 @@
 </div>
 </body>
 </html>
+
