@@ -12,7 +12,7 @@
     /* ===== GLOBAL ===== */
     body {
         margin: 0;
-        font-family: 'Crimson Pro', serif; /* Baichen Du’s font */
+        font-family: 'Crimson Pro', serif;
         font-size: 16px;
         line-height: 1.5;
         background: #f7f8fa;
@@ -25,14 +25,15 @@
         margin: 0 auto;
     }
 
-    /* ===== SIDEBAR (Columbia Baby Blue) ===== */
+    /* ===== SIDEBAR (Bright Columbia Baby Blue + scrollable) ===== */
     .sidebar {
         width: 300px;
-        background: #C4D8E2; /* Columbia University Baby Blue */
+        background: #A8D0E6; /* brighter Columbia Baby Blue */
         padding: 2.5rem 2rem;
         height: 100vh;
         position: sticky;
         top: 0;
+        overflow-y: auto; /* FIX: allows scrolling */
         color: #003366;
         box-sizing: border-box;
     }
@@ -96,7 +97,7 @@
         margin-bottom: 0.7rem;
         font-weight: 600;
         color: #003366;
-        border-bottom: 2px solid #C4D8E2;
+        border-bottom: 2px solid #A8D0E6;
         padding-bottom: 0.3rem;
     }
 
@@ -128,6 +129,7 @@
             width: 100%;
             height: auto;
             text-align: center;
+            position: relative;
         }
         .nav a {
             display: inline-block;
