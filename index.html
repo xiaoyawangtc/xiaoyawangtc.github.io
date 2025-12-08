@@ -5,30 +5,30 @@
 <title>Xiaoya Wang</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Google Font: Inter -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- Google Font: Crimson Pro (Baichen Du’s font) -->
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
     /* ===== GLOBAL ===== */
     body {
         margin: 0;
-        font-family: 'Inter', sans-serif;
-        background: #f5f7fb;
-        color: #222;
-        line-height: 1.7;
+        font-family: 'Crimson Pro', serif; /* Baichen Du’s font */
+        font-size: 16px;
+        line-height: 1.5;
+        background: #f7f8fa;
+        color: #333;
     }
 
     .container {
         display: flex;
         max-width: 1300px;
         margin: 0 auto;
-        padding: 0;
     }
 
     /* ===== SIDEBAR (Columbia Baby Blue) ===== */
     .sidebar {
         width: 300px;
-        background: #C4D8E2; /* Columbia Baby Blue */
+        background: #C4D8E2; /* Columbia University Baby Blue */
         padding: 2.5rem 2rem;
         height: 100vh;
         position: sticky;
@@ -43,12 +43,12 @@
         border-radius: 50%;
         object-fit: cover;
         display: block;
-        margin: 0 auto 1.2rem;
+        margin: 0 auto 1.5rem;
         border: 3px solid #003366;
     }
 
     .name {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         font-weight: 600;
         text-align: center;
         margin-bottom: 0.4rem;
@@ -57,52 +57,51 @@
 
     .subtitle {
         text-align: center;
-        font-size: 0.95rem;
-        color: #003366;
-        margin-bottom: 1.2rem;
+        font-size: 1rem;
+        color: #2E4A62;
+        margin-bottom: 1.5rem;
     }
 
     .contact {
         text-align: center;
-        margin-bottom: 1.5rem;
-        font-size: 0.9rem;
-        color: #003366;
+        margin-bottom: 1.8rem;
+        font-size: 0.95rem;
+        color: #2E4A62;
     }
 
     .nav a {
         display: block;
-        padding: 0.45rem 0;
+        padding: 0.5rem 0;
         font-size: 1.05rem;
-        text-decoration: none;
         color: #003366;
-        font-weight: 500;
+        text-decoration: none;
         transition: 0.2s;
     }
 
     .nav a:hover {
-        color: #001a33;
+        color: #001F33;
         margin-left: 3px;
     }
 
     /* ===== MAIN CONTENT ===== */
     .content {
         flex: 1;
-        padding: 2.8rem 4rem;
+        padding: 3rem 4rem;
         background: white;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
         margin-top: 2.2rem;
         margin-bottom: 0.7rem;
         font-weight: 600;
         color: #003366;
         border-bottom: 2px solid #C4D8E2;
-        padding-bottom: 0.35rem;
+        padding-bottom: 0.3rem;
     }
 
     ul {
-        padding-left: 1.3rem;
+        padding-left: 1.5rem;
     }
 
     li {
@@ -116,7 +115,7 @@
     }
 
     a:hover {
-        color: #001a33;
+        color: #001F33;
         text-decoration: underline;
     }
 
@@ -128,12 +127,11 @@
         .sidebar {
             width: 100%;
             height: auto;
-            position: relative;
             text-align: center;
         }
         .nav a {
             display: inline-block;
-            margin: 0 0.7rem;
+            margin: 0 0.6rem;
         }
         .content {
             padding: 2rem 1.5rem;
@@ -145,14 +143,16 @@
 <body>
 <div class="container">
 
-    <!-- SIDEBAR -->
+    <!-- ===== SIDEBAR ===== -->
     <div class="sidebar">
         <img src="https://via.placeholder.com/300" alt="Profile Photo">
 
         <div class="name">Xiaoya Wang</div>
         <div class="subtitle">M.A. Applied Linguistics<br>Teachers College, Columbia University</div>
 
-        <div class="contact">xw2998 (at) tc.columbia.edu</div>
+        <div class="contact">
+            xw2998 (at) tc.columbia.edu
+        </div>
 
         <div class="nav">
             <a href="#about">About</a>
@@ -163,7 +163,7 @@
         </div>
     </div>
 
-    <!-- MAIN CONTENT -->
+    <!-- ===== MAIN CONTENT ===== -->
     <div class="content">
 
         <!-- ABOUT -->
@@ -231,6 +231,5 @@
 
     </div>
 </div>
-
 </body>
 </html>
